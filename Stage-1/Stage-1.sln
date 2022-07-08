@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "If_Else_Ex", "..\If_Else_Ex
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Castings_Examples", "..\Castings_Examples\Castings_Examples.csproj", "{DE14706F-2A2D-42E0-BA34-2E09E32CFF03}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataTypes_Examples", "..\DataTypes_Examples\DataTypes_Examples.csproj", "{757A70AE-AE3A-4C4C-8330-CFE8A638D323}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{DE14706F-2A2D-42E0-BA34-2E09E32CFF03}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DE14706F-2A2D-42E0-BA34-2E09E32CFF03}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DE14706F-2A2D-42E0-BA34-2E09E32CFF03}.Release|Any CPU.Build.0 = Release|Any CPU
+		{757A70AE-AE3A-4C4C-8330-CFE8A638D323}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{757A70AE-AE3A-4C4C-8330-CFE8A638D323}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{757A70AE-AE3A-4C4C-8330-CFE8A638D323}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{757A70AE-AE3A-4C4C-8330-CFE8A638D323}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
