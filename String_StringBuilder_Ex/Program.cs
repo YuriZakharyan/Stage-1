@@ -452,8 +452,7 @@ namespace String_StringBuilder
             
             */
 
-            /*
-
+            
             //156. Ayn erknish tveri artadryaly, voronq bazmapatik en 3 ev 5 tverin
 
             StringBuilder s = new StringBuilder("  3,6,2,8,11, 30 ,2 ,15,7, 60,2, 3 ");             //          "  3,6,2,8,11, 30 ,2 ,15,7, 60,2, 3 "
@@ -461,8 +460,9 @@ namespace String_StringBuilder
             s = s.Replace(" ", "").Append(',').Insert(0, ',');                                      //          "3,6,2,8,11,30,2,15,7,60,2,3"
             int temp1, temp2;
             int tempNum;
-            int sum = 0;
+            
             int count = 0;
+            int countOfNum = 0;
             int mul = 1;
             for (int i = 0; i < s.Length; i++)
             {
@@ -477,7 +477,14 @@ namespace String_StringBuilder
                 temp2 = s.ToString().IndexOf(',', temp1 + 1);
                 string numStr = s.ToString(temp1 + 1, temp2 - temp1 - 1);
                 tempNum = int.Parse(numStr, System.Globalization.NumberStyles.Number);
-                if (tempNum/100 == 0 && tempNum/10 !=0 && tempNum%3 ==0 && tempNum%5 ==0)
+                while(tempNum != 0)
+                {
+                    tempNum /= 10;
+                    countOfNum++;
+
+                }
+
+                if (countOfNum == 2 && tempNum%3 ==0 && tempNum%5 ==0)
                 {
                     mul *= tempNum;
                 }
@@ -485,7 +492,7 @@ namespace String_StringBuilder
             }
             Console.WriteLine($"Mul: {mul}");
 
-            */
+            
 
 
 
