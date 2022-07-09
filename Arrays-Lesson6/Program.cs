@@ -79,7 +79,7 @@ namespace Arrays_Lesson
             */
 
             
-            //Sort numbers using one for loop       O(n)
+            //Sort numbers using one for loop       O(n^2)
 
             int[] arr = new int[6];
             for (int i = 0; i < arr.Length; i++)
