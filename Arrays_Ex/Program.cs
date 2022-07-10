@@ -382,7 +382,7 @@ namespace Arrays_Ex
 
 
             /*
-            //402-print max of Range [B,C]
+            //402-print max of Range [B,C] 
 
             Console.Write("Input Size of Array: ");
             int n = int.Parse(Console.ReadLine());
@@ -408,7 +408,50 @@ namespace Arrays_Ex
             }
             Console.WriteLine("Max = "+ max);
             */
+
+
+
+            /*
+            //405
+
+            Console.Write("Input Size of Array: ");
+            int n = int.Parse(Console.ReadLine());
+            int[] arr = new int[n];
+            for (int i = 0; i < arr.Length; i++)
+            {
+                Console.Write($"arr[{i}] = ");
+                arr[i] = int.Parse(Console.ReadLine());
+
+            }
+            Array.Sort(arr);
+            Console.Write("Sorted array: ");
+            for(int i = 0; i<arr.Length; i++)
+            {
+                Console.Write($"{arr[i]},");
+            }
+            Array.Reverse(arr);
+            Console.WriteLine();
+            Console.Write("Reverse array: ");
+            for (int i = 0; i < arr.Length; i++)
+            {
+                Console.Write($"{arr[i]},");
+            }
             
+            int count = 0;
+            Console.WriteLine();
+            Console.Write("First 3 maximum numbers is: ");
+            for (int i = 1; i < arr.Length; i++)
+            {
+                if (arr[i-1] > arr[i])
+                {
+                    Console.Write($"{arr[i-1]}, ");
+                    count++;
+                }
+                if (count == 3) break;
+            }
+            */
+
+
 
 
 
