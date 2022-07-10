@@ -485,8 +485,42 @@ namespace Arrays_Ex
             Console.WriteLine("Index = " + index);
             */
 
+            /*
+            //415
+            Console.Write("Input Size of Array: ");
+            int n = int.Parse(Console.ReadLine());
+            int[] arr = new int[n];
+            for (int i = 0; i < arr.Length; i++)
+            {
+                Console.Write($"arr[{i}] = ");
+                arr[i] = int.Parse(Console.ReadLine());
 
+            }
+            int temp = 0;
+            int k = 0;
+            for(int i = 1; i<arr.Length; i++)
+            {
+                if(arr[0] > arr[i])           //swap(temp, a[i])
+                {
+                    temp = i;
+                    continue;
+                }
+                else {
+                    break; 
+                }
+            }
+            for(int i = 1; i<=temp; i++)
+            {
+                k = arr[i-1];
+                arr[i-1] = arr[i];
+                arr[i] = k;
+            }
 
+            for(int i = 0; i<arr.Length; i++)
+            {
+                Console.Write($"{arr[i]}, ");
+            }
+            */
 
         }
     }
