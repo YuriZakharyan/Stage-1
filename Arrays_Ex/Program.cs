@@ -288,7 +288,7 @@ namespace Arrays_Ex
             int n = Convert.ToInt32(Console.ReadLine());
             int[,] arr = new int[m, n];
             int count = 0;
-            int temp = 0;
+            int temp;
             for(int i = 0; i<arr.GetLength(0); i++)
             {
                 for (int j = 0; j<arr.GetLength(1); j++)
@@ -297,20 +297,24 @@ namespace Arrays_Ex
                     arr[i, j] = Convert.ToInt32(Console.ReadLine());
                 }
             }
+
+            Console.WriteLine(arr[0,1]);
+            
             for (int i = 0; i < arr.GetLength(0); i++)
             {
+                temp = arr[0, j];
                 for (int j = 0; j < arr.GetLength(1); j++)
                 {
-                    if (arr[0, j] == arr[i, j])
+
+                    if(temp == arr[i, j])
                     {
                         count++;
-                        temp = j;
-                        break;
+                        continue;
                     }
                 }
-                if (count == arr.Length)
+                if (count > 0)
                 {
-                    Console.WriteLine(arr[i, temp]);
+                    
                 }
             }
 
@@ -318,7 +322,97 @@ namespace Arrays_Ex
             // 5 2 3 
             // 5 6 6 
             */
+
+
+            /*
+            //399
+            Console.Write("Input N: ");
+            int n = Convert.ToInt32(Console.ReadLine());
+            int[] arr = new int[n];
+            for(int i = 0; i<arr.Length; i++)
+            {
+                Console.Write($"arr[{i}] = ");
+                arr[i] = Convert.ToInt32(Console.ReadLine());
+            }
+
+            if (arr[0] != arr[1])
+            {
+                Console.Write(arr[0] + " ");
+            }
+           
+            for (int i = 1; i < arr.Length - 1; i++)
+            {
+                if (arr[i-1] != arr[i] && arr[i] != arr[i + 1])
+                {
+                    Console.Write(arr[i] + " ");
+                }
+            }
             
+            if (arr[arr.Length - 2] != arr[arr.Length - 1])
+            {
+                Console.Write(arr[arr.Length - 1] + " ");
+            }
+            */
+
+
+            /*
+            //400
+
+            Console.Write("Input N: ");
+            int n = int.Parse(Console.ReadLine());
+            int[] arr = new int[n];
+            for(int i = 0; i<arr.Length; i++)
+            {
+                Console.Write($"arr[{i}] = ");
+                arr[i] = int.Parse(Console.ReadLine());
+
+            }
+            int count = 0;
+            for(int i = 1; i<arr.Length; i++)
+            {
+                if (arr[i-1] > arr[i])
+                {
+                    count++;
+                    Console.Write($"{arr[i]},");
+                }
+            }
+            Console.WriteLine();
+            Console.WriteLine($"Count = {count}");
+            */
+
+
+            /*
+            //402-print max of Range [B,C]
+
+            Console.Write("Input Size of Array: ");
+            int n = int.Parse(Console.ReadLine());
+            int[] arr = new int[n];
+            for (int i = 0; i < arr.Length; i++)
+            {
+                Console.Write($"arr[{i}] = ");
+                arr[i] = int.Parse(Console.ReadLine());
+
+            }
+            Console.Write("B=");
+            int b = int.Parse(Console.ReadLine());
+            Console.Write("C=");
+            int max;
+            int c = int.Parse(Console.ReadLine());
+            max = arr[b];
+            for(int i = b+1; i<=c; i++)
+            {
+                if (max < arr[i])
+                {
+                    max = arr[i];
+                }
+            }
+            Console.WriteLine("Max = "+ max);
+            */
+            
+
+
+
+
         }
     }
 }
