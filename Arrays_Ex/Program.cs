@@ -451,7 +451,39 @@ namespace Arrays_Ex
             }
             */
 
+            /*
+            //406-print number which sum of digits is maximum
+            Console.Write("Input Size of Array: ");
+            int n = int.Parse(Console.ReadLine());
+            int[] arr = new int[n];
+            for (int i = 0; i < arr.Length; i++)
+            {
+                Console.Write($"arr[{i}] = ");
+                arr[i] = int.Parse(Console.ReadLine());
 
+            }
+            int max = 0;
+            int temp;
+            int sumOfDigits;
+            int index = 0;
+            for(int i = 0; i<arr.Length; i++)
+            {
+                sumOfDigits = 0;
+                while(arr[i] != 0)                   //  256      25
+                {                                       //
+                    temp = arr[i] % 10;                 //temp =2   
+                    sumOfDigits += temp;                //sum =13   
+                    arr[i] = arr[i] / 10;               //arr = 0
+                }
+                if (max < sumOfDigits)
+                {
+                    max = sumOfDigits;
+                    index = i;
+
+                }
+            }
+            Console.WriteLine("Index = " + index);
+            */
 
 
 
