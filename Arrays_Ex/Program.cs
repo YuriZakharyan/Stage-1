@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using static System.Math;
 namespace Arrays_Ex
 {
@@ -521,6 +522,103 @@ namespace Arrays_Ex
                 Console.Write($"{arr[i]}, ");
             }
             */
+
+            /*
+             //TODO
+
+            //420
+
+
+            int count;
+            List<int> numbers = new List<int>();
+            for(int i = 0; i<10; i++)
+            {
+                Console.Write($"[{i}]->");
+                numbers.Add(Convert.ToInt32(Console.ReadLine()));
+            }
+            for(int i = 0; i<numbers.Count; i++)
+            {
+                count = 0;
+                for(int j = 0; j<numbers.Count; j++)
+                {
+                    if(numbers[i] == numbers[j])
+                    {
+                        count++;
+                    }
+                }
+                int k = 0;
+                int count1 = 0;
+                if(count == 4)
+                {
+                    for(int l = 0; l<numbers.Count; l++)
+                    {
+                        if (count1 == 1)
+                        {
+                            l = l - 1;
+                        }
+                        else
+                        {
+                            count1 = 0;
+                        }
+                        if (numbers[l] == numbers[i])
+                        {
+                            numbers.RemoveAt(l);
+                            count1++;
+                        }
+                    }
+                }
+            }
+            foreach(int h in numbers)
+            {
+                Console.WriteLine(h);
+            }
+            */
+
+
+            //MultiDimensional Arrays
+            /*
+             
+            //421
+
+            Console.Write("Input m: ");
+            int m = int.Parse(Console.ReadLine());
+            Console.Write("Input n: ");
+            int n = int.Parse(Console.ReadLine());
+            int[,] arr = new int[m, n];
+            for (int i = 0; i < arr.GetLength(0); i++)
+            {
+                for (int j = 0; j < arr.GetLength(1); j++)
+                {
+                    Console.Write($"arr[{i},{j}] = ");
+                    arr[i, j] = Convert.ToInt32(Console.ReadLine());
+                }
+            }
+            for (int i = 0; i < arr.GetLength(0); i++)
+            {
+                for (int j = 0; j < arr.GetLength(1); j++)
+                {
+                    Console.Write($"{arr[i, j]}\t");
+                }
+                Console.WriteLine();
+            }
+
+            int count = 0;
+            Console.WriteLine("Input k: ");
+            int k = int.Parse(Console.ReadLine());
+
+            for (int i = 0; i < arr.GetLength(0); i++)
+            {
+                for (int j = 0; j < arr.GetLength(1); j++)
+                {
+                    if (i > j && arr[i, j] % k == 0)
+                    {
+                        count++;
+                    }
+                }
+            }
+            Console.WriteLine("Count: " + count);
+            */
+
 
         }
     }
