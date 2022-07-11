@@ -620,6 +620,43 @@ namespace Arrays_Ex
             */
 
 
+            /*
+            //426-Ojandak ankyunagcic verev gtnvox zuyg tveri gumary
+
+            Console.Write("Input m: ");
+            int m = int.Parse(Console.ReadLine());
+            Console.Write("Input n: ");
+            int n = int.Parse(Console.ReadLine());
+            int[,] arr = new int[m, n];
+            for (int i = 0; i < arr.GetLength(0); i++)
+            {
+                for (int j = 0; j < arr.GetLength(1); j++)
+                {
+                    Console.Write($"arr[{i},{j}] = ");
+                    arr[i, j] = Convert.ToInt32(Console.ReadLine());
+                }
+            }
+            for (int i = 0; i < arr.GetLength(0); i++)
+            {
+                for (int j = 0; j < arr.GetLength(1); j++)
+                {
+                    Console.Write($"{arr[i, j]}\t");
+                }
+                Console.WriteLine();
+            }
+            int sum = 0;
+            for (int i = 0; i < arr.GetLength(0); i++)
+            {
+                for (int j = 0; j < arr.GetLength(1); j++)
+                {
+                    if (i + j < arr.GetLength(1)-1 && arr[i,j] % 2 == 0)
+                    {
+                        sum += arr[i, j];
+                    }
+                }
+            }
+            Console.WriteLine($"Sum= {sum}");
+            */
         }
     }
 }
