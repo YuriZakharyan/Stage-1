@@ -657,6 +657,54 @@ namespace Arrays_Ex
             }
             Console.WriteLine($"Sum= {sum}");
             */
+
+            /*
+            //429
+            Console.Write("Input m: ");
+            int m = int.Parse(Console.ReadLine());
+            Console.Write("Input n: ");
+            int n = int.Parse(Console.ReadLine());
+            int[,] arr = new int[m, n];
+            for (int i = 0; i < arr.GetLength(0); i++)
+            {
+                for (int j = 0; j < arr.GetLength(1); j++)
+                {
+                    Console.Write($"arr[{i},{j}] = ");
+                    arr[i, j] = Convert.ToInt32(Console.ReadLine());
+                }
+            }
+            for (int i = 0; i < arr.GetLength(0); i++)
+            {
+                for (int j = 0; j < arr.GetLength(1); j++)
+                {
+                    Console.Write($"{arr[i, j]}\t");
+                }
+                Console.WriteLine();
+            }
+            int sum = 0;
+            int count = 0;
+            for (int i = 0; i < arr.GetLength(0); i++)
+            {
+                for (int j = 0; j < arr.GetLength(1); j++)
+                {
+                    if(i>=j && arr[i,j]%2 == 0)
+                    {
+                        sum += arr[i, j];
+                        count++;
+                    }
+
+                }
+            }if(count == 0)
+            {
+                Console.WriteLine("There isn't even number");
+                return;
+            }
+            double mid = sum / count;
+            Console.WriteLine("Output: " + mid);
+            */
+
+
+
         }
     }
 }
