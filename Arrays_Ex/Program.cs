@@ -299,24 +299,29 @@ namespace Arrays_Ex
                 }
             }
 
-            Console.WriteLine(arr[0,1]);
-            
             for (int i = 0; i < arr.GetLength(0); i++)
             {
-                temp = arr[0, j];
                 for (int j = 0; j < arr.GetLength(1); j++)
                 {
+                    Console.Write($"{arr[i,j]}\t");
+                }
+                Console.WriteLine();
+            }
 
-                    if(temp == arr[i, j])
+            Console.WriteLine(arr[0,1]);
+            
+            for (int i = 0; i < arr.GetLength(1); i++)
+            {
+                
+                for (int j = 0; j < arr.GetLength(1); j++)
+                {
+                    if(arr[0,i] == arr[i, j])
                     {
                         count++;
                         continue;
                     }
                 }
-                if (count > 0)
-                {
-                    
-                }
+                
             }
 
             // 2 4 5 
@@ -746,6 +751,13 @@ namespace Arrays_Ex
             /*
             //461-print row numbers which elements sorted in ascending order
 
+
+
+
+
+
+
+
             Console.Write("Input m: ");
             int m = int.Parse(Console.ReadLine());
             Console.Write("Input n: ");
@@ -785,15 +797,7 @@ namespace Arrays_Ex
             }
             */
 
-
-
-
-
-
-
-
-
-
-        } 
+    
+        }
     }
 }
