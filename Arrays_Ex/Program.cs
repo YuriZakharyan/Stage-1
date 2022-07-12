@@ -279,7 +279,7 @@ namespace Arrays_Ex
             }
             */
 
-            /*
+            
 
             //398 - Common elements in all rows of a matrix
 
@@ -350,7 +350,7 @@ namespace Arrays_Ex
                 Console.Write($"{item}\t");
             }
                                 
-            */
+            
 
             /*
             //399
