@@ -289,18 +289,18 @@ namespace Arrays_Ex
             int n = Convert.ToInt32(Console.ReadLine());
             int[,] arr = new int[m, n];
  
-            for(int i = 0; i<m; i++)
+            for(int i = 0; i<arr.GetLength(0); i++)
             {
-                for (int j = 0; j<n; j++)
+                for (int j = 0; j<arr.GetLength(1); j++)
                 {
                     Console.Write($"arr[{i},{j}] = ");
                     arr[i, j] = Convert.ToInt32(Console.ReadLine());
                 }
             }
             
-            for (int i = 0; i < m; i++)
+            for (int i = 0; i < arr.GetLength(0); i++)
             {
-                for (int j = 0; j < n; j++)
+                for (int j = 0; j < arr.GetLength(1); j++)
                 {
                     Console.Write($"{arr[i,j]}\t");
                 }
@@ -309,14 +309,14 @@ namespace Arrays_Ex
             List<int> numbers = new List<int>();
             int countRow = 0;
             int count = 0;
-            for (int k = 0; k < n; k++)
+            for (int k = 0; k < arr.GetLength(1); k++)
             {
                 countRow = 0;
-                for (int i = 1; i < m; i++)
+                for (int i = 1; i < arr.GetLength(0); i++)
                 {
 
                     count = 0;
-                    for (int j = 0; j < n; j++)
+                    for (int j = 0; j < arr.GetLength(1); j++)
                     {
                         if (arr[0, k] == arr[i, j])
                         {
@@ -329,7 +329,7 @@ namespace Arrays_Ex
                             continue;
                         }
                     }
-                    if(count == n)
+                    if(count == arr.GetLength(1))
                     {
                         break;
                     }
@@ -338,16 +338,22 @@ namespace Arrays_Ex
                 {
                     continue;
                 }
-                if(countRow == m-1)
+                if(countRow == arr.GetLength(0) - 1)
                 {
                     numbers.Add(arr[0, k]);
                     continue;
                 }
             }
-            foreach(int item in numbers)
+
+            Console.Write("OutPut: ");
+            if (numbers.Count == 0)
             {
-                Console.WriteLine("Output: ");
-                Console.Write($"{item}\t");
+                Console.WriteLine("NO");
+                return;
+            }
+            foreach (int item in numbers)
+            {
+                    Console.Write($"{item}\t");
             }
                                 
             
