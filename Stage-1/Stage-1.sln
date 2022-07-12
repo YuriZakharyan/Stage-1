@@ -13,9 +13,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataTypes_Examples", "..\Da
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Arrays_Lesson", "Arrays_Lesson\Arrays_Lesson.csproj", "{E703EED2-D92C-4E1D-A6CD-FF3457DAF24B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Arrays-Lesson6", "..\Arrays-Lesson6\Arrays-Lesson6.csproj", "{621323CE-372B-40C6-9FD4-07D2C7764AC6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Arrays-Lesson6", "..\Arrays-Lesson6\Arrays-Lesson6.csproj", "{621323CE-372B-40C6-9FD4-07D2C7764AC6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Arrays_Ex", "..\Arrays_Ex\Arrays_Ex.csproj", "{1D63163C-4880-4296-8EF7-D61DD4BF7AD3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Arrays_Ex", "..\Arrays_Ex\Arrays_Ex.csproj", "{1D63163C-4880-4296-8EF7-D61DD4BF7AD3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson_7", "..\Lesson_7\Lesson_7.csproj", "{3AA650CB-14CD-4AA6-A66D-FC04EA059151}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{1D63163C-4880-4296-8EF7-D61DD4BF7AD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1D63163C-4880-4296-8EF7-D61DD4BF7AD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1D63163C-4880-4296-8EF7-D61DD4BF7AD3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3AA650CB-14CD-4AA6-A66D-FC04EA059151}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3AA650CB-14CD-4AA6-A66D-FC04EA059151}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3AA650CB-14CD-4AA6-A66D-FC04EA059151}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3AA650CB-14CD-4AA6-A66D-FC04EA059151}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
