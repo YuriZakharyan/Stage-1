@@ -280,55 +280,77 @@ namespace Arrays_Ex
             */
 
             /*
-            //TODO
-            //398
+
+            //398 - Common elements in all rows of a matrix
 
             Console.Write("Input M: ");
             int m = Convert.ToInt32(Console.ReadLine());
             Console.Write("Input N: ");
             int n = Convert.ToInt32(Console.ReadLine());
             int[,] arr = new int[m, n];
-            int count = 0;
-            int temp;
-            for(int i = 0; i<arr.GetLength(0); i++)
+ 
+            for(int i = 0; i<m; i++)
             {
-                for (int j = 0; j<arr.GetLength(1); j++)
+                for (int j = 0; j<n; j++)
                 {
                     Console.Write($"arr[{i},{j}] = ");
                     arr[i, j] = Convert.ToInt32(Console.ReadLine());
                 }
             }
-
-            for (int i = 0; i < arr.GetLength(0); i++)
+            
+            for (int i = 0; i < m; i++)
             {
-                for (int j = 0; j < arr.GetLength(1); j++)
+                for (int j = 0; j < n; j++)
                 {
                     Console.Write($"{arr[i,j]}\t");
                 }
                 Console.WriteLine();
             }
-
-            Console.WriteLine(arr[0,1]);
-            
-            for (int i = 0; i < arr.GetLength(1); i++)
+            List<int> numbers = new List<int>();
+            int countRow = 0;
+            int count = 0;
+            for (int k = 0; k < n; k++)
             {
-                
-                for (int j = 0; j < arr.GetLength(1); j++)
+                countRow = 0;
+                for (int i = 1; i < m; i++)
                 {
-                    if(arr[0,i] == arr[i, j])
+
+                    count = 0;
+                    for (int j = 0; j < n; j++)
                     {
-                        count++;
-                        continue;
+                        if (arr[0, k] == arr[i, j])
+                        {
+                            countRow++;
+                            break;
+                        }
+                        else
+                        {
+                            count++;
+                            continue;
+                        }
+                    }
+                    if(count == n)
+                    {
+                        break;
                     }
                 }
-                
+                if(count == n)
+                {
+                    continue;
+                }
+                if(countRow == m-1)
+                {
+                    numbers.Add(arr[0, k]);
+                    continue;
+                }
             }
-
-            // 2 4 5 
-            // 5 2 3 
-            // 5 6 6 
+            foreach(int item in numbers)
+            {
+                Console.WriteLine("Output: ");
+                Console.Write($"{item}\t");
+            }
+                                
             */
-
 
             /*
             //399
