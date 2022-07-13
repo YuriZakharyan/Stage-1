@@ -743,7 +743,7 @@ namespace Arrays_Ex
                 Console.WriteLine("There isn't even number");
                 return;
             }
-            double mid = sum / count;
+            double mid = (double)sum / count;
             Console.WriteLine("Output: " + mid);
             */
 
@@ -783,7 +783,7 @@ namespace Arrays_Ex
                     }
                 }
             }
-            Console.WriteLine($"Output: {sum/count}");
+            Console.WriteLine($"Output: {(double)sum/count}");
 
             */
 
