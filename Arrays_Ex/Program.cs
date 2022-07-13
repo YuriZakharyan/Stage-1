@@ -279,7 +279,7 @@ namespace Arrays_Ex
             }
             */
 
-            
+            /*
 
             //398 - Common elements in all rows of a matrix
 
@@ -355,8 +355,8 @@ namespace Arrays_Ex
             {
                     Console.Write($"{item}\t");
             }
-                                
-            
+            */
+
 
             /*
             //399
@@ -487,6 +487,7 @@ namespace Arrays_Ex
 
             /*
             //406-print number which sum of digits is maximum
+
             Console.Write("Input Size of Array: ");
             int n = int.Parse(Console.ReadLine());
             int[] arr = new int[n];
@@ -556,56 +557,66 @@ namespace Arrays_Ex
             }
             */
 
+
+            
             /*
-             //TODO
-
-            //420
+            //420-print that elements which appears in array[List] 4 time
 
 
-            int count;
-            List<int> numbers = new List<int>();
-            for(int i = 0; i<10; i++)
+            Console.Write("Input Size: ");
+            int n = Convert.ToInt32(Console.ReadLine());
+
+            List<int> arr = new List<int>();            
+            
+            for(int i = 0; i<n; i++)
             {
-                Console.Write($"[{i}]->");
-                numbers.Add(Convert.ToInt32(Console.ReadLine()));
+                Console.Write($"arr[{i}] = ");
+                arr.Add(int.Parse(Console.ReadLine()));
             }
-            for(int i = 0; i<numbers.Count; i++)
+
+            foreach(int item in arr)
             {
-                count = 0;
-                for(int j = 0; j<numbers.Count; j++)
+                Console.Write(item + "\t");
+            }
+            Console.WriteLine();
+            int tt = 0;
+            for(int i = 0; i<arr.Count; i++)
+            {
+                int temp = arr[i];
+                int count = 0;
+                tt = 0;
+                for (int j = 0; j<arr.Count; j++)
                 {
-                    if(numbers[i] == numbers[j])
+                    if(arr[i] == arr[j])
                     {
                         count++;
                     }
                 }
-                int k = 0;
-                int count1 = 0;
-                if(count == 4)
+                if (count == 4)
                 {
-                    for(int l = 0; l<numbers.Count; l++)
+                    for(int k = 0; k<arr.Count; k++)
                     {
-                        if (count1 == 1)
+                        if(tt == 1)
                         {
-                            l = l - 1;
+                            k--;
                         }
-                        else
+                        tt = 0;
+                        if(arr[k] == temp)
                         {
-                            count1 = 0;
-                        }
-                        if (numbers[l] == numbers[i])
-                        {
-                            numbers.RemoveAt(l);
-                            count1++;
+                            tt++;
+                            arr.RemoveAt(k);
                         }
                     }
                 }
             }
-            foreach(int h in numbers)
+            foreach(int item in arr)
             {
-                Console.WriteLine(h);
+                Console.Write(item + "\t");
             }
+            
+
             */
+
 
 
             //MultiDimensional Arrays
