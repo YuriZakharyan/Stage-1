@@ -558,7 +558,7 @@ namespace Arrays_Ex
             */
 
 
-            
+
             /*
             //420-print that elements which appears in array[List] 4 time
 
@@ -791,12 +791,6 @@ namespace Arrays_Ex
             //461-print row numbers which elements sorted in ascending order
 
 
-
-
-
-
-
-
             Console.Write("Input m: ");
             int m = int.Parse(Console.ReadLine());
             Console.Write("Input n: ");
@@ -836,7 +830,49 @@ namespace Arrays_Ex
             }
             */
 
-    
+            /*
+            //477 - find min(column(k))
+
+            Console.Write("Input Row: ");
+            int m = int.Parse(Console.ReadLine());
+            Console.Write("Input Column: ");
+            int n = int.Parse(Console.ReadLine());
+            int min;
+            int[,] arr = new int[m, n];
+            for (int i = 0; i < arr.GetLength(0); i++)
+            {
+                for (int j = 0; j < arr.GetLength(1); j++)
+                {
+                    Console.Write($"arr[{i},{j}] = ");
+                    arr[i, j] = Convert.ToInt32(Console.ReadLine());
+                }
+            }
+            for (int i = 0; i < arr.GetLength(0); i++)
+            {
+                for (int j = 0; j < arr.GetLength(1); j++)
+                {
+                    Console.Write($"{arr[i, j]}\t");
+                }
+                Console.WriteLine();
+            }
+            Console.Write("Input number of column: ");
+            int k = Convert.ToInt32(Console.ReadLine());
+            min = arr[0, k];
+            for(int i =1; i<arr.GetLength(0); i++)
+            {
+                int j = k;
+                if (min > arr[i, j])
+                {
+                    min = arr[i, j];
+                }
+            }
+            Console.WriteLine("Output: " + min);
+            */
+
+
+
+
+
         }
     }
 }
