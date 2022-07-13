@@ -870,6 +870,31 @@ namespace Arrays_Ex
             */
 
 
+            //491
+
+            Console.Write("Input Row: ");
+            int m = int.Parse(Console.ReadLine());
+            Console.Write("Input Column: ");
+            int n = int.Parse(Console.ReadLine());
+            int[,] arr = new int[m, n];
+            for(int i = 0; i<arr.GetLength(0); i++)
+            {
+                for (int j = 0; j<arr.GetLength(1); j++)
+                {
+                    Console.Write($"arr[{i},{j}] = ");
+                    arr[i, j] = Convert.ToInt32(Console.ReadLine());
+                }
+            }
+            for (int i = 0; i < arr.GetLength(0); i++)
+            {
+                for (int j = 0; j < arr.GetLength(1); j++)
+                {
+                    Console.Write($"{arr[i,j]}\t");
+                }
+                Console.WriteLine();                
+            }
+
+
 
 
 
