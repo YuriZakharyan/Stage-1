@@ -7,8 +7,8 @@ namespace Class_Intro2
 {
     static class Intro
     {
-        public static string[] CarNames = new string[] { "BMW", "Mercedes", "Opel", "Opel" };
-        public static decimal[] CarPrice = new decimal[] { 30000, 30000, 25000, 10000 };
+        private static string[] CarNames = new string[] { "BMW", "Mercedes", "Opel", "Opel" };
+        private static decimal[] CarPrice = new decimal[] { 30000, 30000, 25000, 10000 };
 
         static Intro()
         {

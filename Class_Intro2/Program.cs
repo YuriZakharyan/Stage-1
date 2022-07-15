@@ -6,12 +6,11 @@ namespace Class_Intro2
     {
         static void Main(string[] args)
         {
-            int k;
-            decimal value1, value2;
+            decimal value1;
             Console.WriteLine("---What do you want---");
             Console.WriteLine("1. Input value of car and return their respective car names");
             Console.WriteLine("2. Input Names of Cars and return Values");
-            bool b = int.TryParse(Console.ReadLine(), out k);
+            bool b = int.TryParse(Console.ReadLine(), out int k);
             if (b == false)
             {
                 Console.WriteLine("Invalid Input!");
