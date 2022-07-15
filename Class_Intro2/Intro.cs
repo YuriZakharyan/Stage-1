@@ -47,7 +47,7 @@ namespace Class_Intro2
                 }
                 if (count == 0)
                 {
-                    Console.WriteLine($"There is no such car here, the price of which is equal to {CarPrice}");
+                    Console.WriteLine($"There is no such car here, the price of which is equal to {price}");
                 }
             }
         }
