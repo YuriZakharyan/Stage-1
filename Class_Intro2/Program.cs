@@ -8,8 +8,8 @@ namespace Class_Intro2
         {
             decimal value1;
             Console.WriteLine("---What do you want---");
-            Console.WriteLine("1. Input value of car and return their respective car names");
-            Console.WriteLine("2. Input Names of Cars and return Values");
+            Console.WriteLine("If you want to input value of cars and return their respective car names press 1");
+            Console.WriteLine("If you want to input names of cars and return their values press 2");
             bool b = int.TryParse(Console.ReadLine(), out int k);
             if (b == false)
             {
@@ -39,11 +39,11 @@ namespace Class_Intro2
                         Intro.PrintValues(name);
                         break;
                     default:
-                        Console.WriteLine("Default!!!!");
+                        Console.WriteLine("Your input is incorrect!!!");
                         break;
-
                 }
             }
+            Intro.IsEqual();
         }
     }
 }

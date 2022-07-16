@@ -14,10 +14,9 @@ namespace Class_Intro2
         {
         }
 
-
         public static bool IsEqual()
         {
-            if(CarNames.Length != CarPrice.Length)
+            if (CarNames.Length != CarPrice.Length)
             {
                 return false;
             }
@@ -25,13 +24,11 @@ namespace Class_Intro2
         }
 
 
-
         public static void PrintNames(decimal price)
         {
             if (IsEqual() == false)
             {
                 Console.WriteLine("Arrays isn't equal");
-
             }
             else
             {
@@ -41,7 +38,6 @@ namespace Class_Intro2
                     if (price == CarPrice[i])
                     {
                         count++;
-
                         Console.WriteLine($"{i}--->" + CarNames[i].ToString());
                     }
                 }
@@ -51,37 +47,30 @@ namespace Class_Intro2
                 }
             }
         }
-
         public static void PrintValues(string name)
         {
             int count2 = 0;
             if (IsEqual() == false)
             {
                 Console.WriteLine("Arrays isn't equal");
-
             }
             else
-            { 
-                for(int i = 0; i<CarNames.Length; i++)
+            {
+                for (int i = 0; i < CarNames.Length; i++)
                 {
-                    if(name == CarNames[i] || name.ToLower() == CarNames[i].ToLower())
+                    if (name == CarNames[i] || name.ToLower() == CarNames[i].ToLower())
                     {
                         count2++;
                         Console.WriteLine(CarPrice[i]);
                     }
                 }
-                if(count2 == 0)
+                if (count2 == 0)
                 {
                     Console.WriteLine($"There is no Car which name is {name}");
                 }
-
-            
-            
-            
-            
             }
 
-            }
+        }
 
 
     }
