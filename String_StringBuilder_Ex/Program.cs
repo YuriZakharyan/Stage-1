@@ -487,6 +487,40 @@ namespace String_StringBuilder
 
 
 
+            //646
+            // polindrom or not
+            Console.Write("Input string: ");
+            bool t;
+            string s = Console.ReadLine();
+            int count = 0;
+            int  k= 0;
+            for(int i = 0; i<s.Length/2; i++)
+            {
+                if(s[i] == s[s.Length - 1 - i])
+                {
+                    count++;
+                }
+                else
+                {
+                    k = 1;
+                    break;
+                }
+            }
+            if(k == 1)
+            {
+                t = false;
+                Console.WriteLine(t);
+                return;
+            }
+            if(count == s.Length / 2)
+            {
+                t = true;
+                Console.WriteLine(t);
+                return;
+            }
+
+
+
 
 
 
