@@ -6,11 +6,12 @@ namespace FileDirectoryTest
 {
     class Program
     {
+
         static void Main(string[] args)
         {
 
-
             /*
+            
             //Write text
 
             string filePath = @"D:\Basic_It\FileTest.txt";
@@ -20,10 +21,9 @@ namespace FileDirectoryTest
             byte[] bytes = Encoding.UTF8.GetBytes(data);
             
             obj.Write(bytes, 0, bytes.Length);
-            
+
+
             */
-
-
 
 
             /*
