@@ -485,7 +485,7 @@ namespace String_StringBuilder
             Console.WriteLine($"Mul: {mul}");
             */
 
-
+            /*
 
             //646
             // polindrom or not
@@ -518,6 +518,44 @@ namespace String_StringBuilder
                 Console.WriteLine(t);
                 return;
             }
+
+            */
+
+
+
+            /*
+            //648
+            Console.Write("Input string: ");
+            string s = Console.ReadLine();
+            if (!s.Contains('x'))
+            {
+                Console.WriteLine("Invalid input");
+                return;
+            }
+            int index = s.IndexOf("x");     //i == 2
+            int count = 0;
+            for(int i = index+1; i<s.Length; i++)
+            {
+                if(s[i] == 'x')
+                {
+                    count++;
+                }
+            }
+            Console.WriteLine("Count = " + count);
+            */
+
+
+            /*
+            //649
+            Console.Write("Input string: ");
+            string s = Console.ReadLine();
+            int index1 = s.IndexOf('z');
+            int index2 = s.IndexOf('z', index1 + 1);
+            Console.WriteLine($"\n{index2 - index1 - 1}");
+            */
+
+
+
 
 
 
