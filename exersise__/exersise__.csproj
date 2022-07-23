@@ -5,8 +5,4 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\If_Else_Ex\If_Else_Ex.csproj" />
-  </ItemGroup>
-
 </Project>
