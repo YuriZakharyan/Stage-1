@@ -49,5 +49,9 @@ namespace exersise__
             }
             return count == arr.Length-1; 
         }
+        public static void CalcPercent(int n, double percent)
+        {
+            Console.WriteLine($"{percent} percent of {n} is equal to {n * percent / 100}");
+        }
     }
 }
