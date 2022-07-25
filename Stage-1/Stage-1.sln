@@ -35,7 +35,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson_11", "..\Lesson_11\L
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClassInStruct", "..\ClassInStruct\ClassInStruct.csproj", "{441200FC-DEB7-4C3A-A496-B6E9EA4CDB9E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "exersise__", "..\exersise__\exersise__.csproj", "{6A987BEB-084E-4164-901A-2BCBD1935E87}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "exersise__", "..\exersise__\exersise__.csproj", "{6A987BEB-084E-4164-901A-2BCBD1935E87}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fibonachi_example", "..\Fibonachi_example\Fibonachi_example.csproj", "{1428E60F-F181-4500-B07A-FBC314964E4B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP_Intro", "..\OOP_Intro\OOP_Intro.csproj", "{79706638-42C9-492B-B55E-9145EE30E16A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -111,6 +115,14 @@ Global
 		{6A987BEB-084E-4164-901A-2BCBD1935E87}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6A987BEB-084E-4164-901A-2BCBD1935E87}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6A987BEB-084E-4164-901A-2BCBD1935E87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1428E60F-F181-4500-B07A-FBC314964E4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1428E60F-F181-4500-B07A-FBC314964E4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1428E60F-F181-4500-B07A-FBC314964E4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1428E60F-F181-4500-B07A-FBC314964E4B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79706638-42C9-492B-B55E-9145EE30E16A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79706638-42C9-492B-B55E-9145EE30E16A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79706638-42C9-492B-B55E-9145EE30E16A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79706638-42C9-492B-B55E-9145EE30E16A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

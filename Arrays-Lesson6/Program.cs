@@ -102,8 +102,6 @@ namespace Arrays_Lesson
             {
                 Console.Write($"{arr[i]}, ");
             }
-
-
         }
     }
 }

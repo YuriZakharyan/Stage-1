@@ -869,7 +869,7 @@ namespace Arrays_Ex
             Console.WriteLine("Output: " + min);
             */
 
-
+            /*
             //491
 
             Console.Write("Input Row: ");
@@ -894,8 +894,7 @@ namespace Arrays_Ex
                 Console.WriteLine();                
             }
 
-
-
+            */
 
 
         }

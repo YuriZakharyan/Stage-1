@@ -555,14 +555,81 @@ namespace String_StringBuilder
             */
 
 
+            /*
 
+            //687
+            Console.Write("Input string: ");
+            string s = Console.ReadLine();
+            int count = 0;
+            for(int i = 0; i<s.Length; i++)
+            {
+                if(s[i]>=48 && s[i] <= 57)
+                {
+                    count++;
+                }
+            }
+            Console.WriteLine($"Count: {count}");
 
+            */
 
+            /*
+            //TODO
+            //694
+            //Console.Write("Input string: ");
+            //string s = Console.ReadLine();  //      256 -  48 + 314
+            //s = s.Replace(" ", "").Insert(s.Length, "=");    //      256-48+314=
+            string s = "256-48+314=";
+            int countt = 0;
+            for(int i = 0; i<s.Length; i++)
+            {
+                if(s[i] == '-' || s[i] == '+')
+                {
+                    countt++;
+                }
+            }
 
+            while (countt != 1)
+            {
+                int temp1 = 0;
+                char sign;
+                int temp2 = 0;
+                int tempPlus = s.IndexOf('+');
+                int tempMinus = s.IndexOf('-');
+                if (tempMinus < tempPlus)
+                {
+                    sign = '-';
+                    temp1 = tempMinus;
+                    temp2 = tempPlus;
+                }
+                else
+                {
+                    sign = '+';
+                    temp1 = tempPlus;
+                    temp2 = tempMinus;
+                }
+                int firstNum = Convert.ToInt32(s.Substring(0, temp1));
+                int secondNum = Convert.ToInt32(s.Substring(temp1 + 1, temp2 - temp1 - 1));
+                //Console.WriteLine(firstNum);
+                //Console.WriteLine(secondNum);
+                //Console.WriteLine(sign);
+                int count = 0;
+                if (sign == '-')
+                {
+                    count = firstNum - secondNum;
+                }
+                if (sign == '+')
+                {
+                    count = firstNum + secondNum;
+                }
+                string str = s.Substring(0, temp2);
+                s = s.Replace(str, Convert.ToString(count));
+                Console.WriteLine(s);
+                count--;
+                
+            }
 
-
-
-
+            Console.WriteLine(s);
+            */
 
             /*
             string s = "";
