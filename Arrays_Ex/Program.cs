@@ -903,11 +903,13 @@ namespace Arrays_Ex
             */
 
 
-
+            /*
             int ?a = null;
             int? b = 5;
             Console.WriteLine(a.GetValueOrDefault());
             Console.WriteLine(b.GetValueOrDefault());
+            */
         }
     }
 }
+     

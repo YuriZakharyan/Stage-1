@@ -86,8 +86,14 @@ namespace C_Sharp_Basics
             Driver driver1 = new Driver();
             driver1.height = 10;
             Console.WriteLine(driver1.height);
-            driver1.firstName = "Anni";
+            driver1.firstName = "Ani";
             Console.WriteLine(driver1.firstName);
+
+
+            Car obj;    //new Car(); 
+            obj.year = 2000;
+            Console.WriteLine(obj.year);
+            //Console.WriteLine(obj.Price());
         }
     }
 }

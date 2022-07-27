@@ -4,6 +4,30 @@ using System.Text;
 
 namespace C_Sharp_Basics
 {
+    struct Car
+    {
+        public string name;
+        private bool isAutomatic;
+        public string color;
+        public int year;
+        public int Price()
+        {
+            int sum = 0;
+            if(year >= 2010)
+            {
+                sum += 20000;
+            }
+            else if(year <= 2009 && year >= 2000)
+            {
+                sum += 10000;
+            }
+            else
+            {
+                sum = +5000;
+            }
+            return sum;
+        }
+    }
     class Person
     {
         private string s1;
@@ -12,11 +36,11 @@ namespace C_Sharp_Basics
             {
                 if(s1 == "Ani")
                 {
-                    return s1;
+                    return "This person is Girl";
                 }
                 else
                 {
-                    return s1 + "Hello";
+                    return "This person is Boy";
                 }
             }
             set
