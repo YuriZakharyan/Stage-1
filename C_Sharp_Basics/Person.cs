@@ -76,4 +76,21 @@ namespace C_Sharp_Basics
             return a + b;
         }
     }
+    class strings
+    {
+        public static void secondRepeatedElemIndex(string s, char c)
+        {
+            int firstindex = s.IndexOf(c);
+            Console.WriteLine("firstindex = " + firstindex);
+            int secondIndex = s.IndexOf(c, firstindex + 1);
+            if (secondIndex == -1)
+            {
+                Console.WriteLine("Invalid input");
+            }
+            else
+            {
+                Console.WriteLine(secondIndex);
+            }
+        }
+    }
 }

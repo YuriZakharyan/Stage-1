@@ -98,10 +98,8 @@ namespace C_Sharp_Basics
 
             //Console.WriteLine( Person.Sum(2, 3));       //static method
             //Console.WriteLine(Workers.Sum(2, 3));
-        
-        
-        
-        
+
+            strings.secondRepeatedElemIndex("acdsj cjjo   aaa", 'c');
         }
     }
 }
