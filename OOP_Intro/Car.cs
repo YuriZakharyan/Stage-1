@@ -12,7 +12,6 @@ namespace OOP_Intro
         public bool IsElectric { get; set; }
         public decimal price { get; set; }
         public string transmission { get; set; }
-
     }
     public class BMW : Car
     {

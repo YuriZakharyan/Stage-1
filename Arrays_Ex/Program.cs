@@ -7,8 +7,8 @@ namespace Arrays_Ex
     {
         static void Main(string[] args)
         {
+
             /*
-            
             //211-arithmetic overage of positive elements
 
 
@@ -30,15 +30,16 @@ namespace Arrays_Ex
                     count++;
                 }
             }
-            float mid = sum / count;
+            float mid = (float)sum / count;
             Console.WriteLine($"Mid: {mid}");
             */
 
-            /*
-             
+
+
+
             //212-
-            
-            
+
+            /*
             Console.Write("Input Size of Array: ");
             int n = Convert.ToInt32(Console.ReadLine());
             int[] arr = new int[n];
@@ -59,14 +60,20 @@ namespace Arrays_Ex
             }
             double mid = Sqrt(sum/count);
             Console.WriteLine($"Output: {mid}");
+            
             */
-
 
             /*
             //218
             Console.Write("Input Size of Array: ");
             int n = Convert.ToInt32(Console.ReadLine());
             int[] arr = new int[n];
+
+            for(int i = 0; i<arr.Length; i++)
+            {
+                Console.Write($"arr[{i}] = ");
+                arr[i] = Convert.ToInt32(Console.ReadLine());
+            }
 
             int sum = 0;
             for(int i = 0; i<arr.Length; i++)
@@ -228,7 +235,6 @@ namespace Arrays_Ex
                 arr[i] = arr[i + 1];
                 Console.Write($"{arr[i]}, ");
             }
-
             */
 
 
@@ -897,6 +903,11 @@ namespace Arrays_Ex
             */
 
 
+
+            int ?a = null;
+            int? b = 5;
+            Console.WriteLine(a.GetValueOrDefault());
+            Console.WriteLine(b.GetValueOrDefault());
         }
     }
 }
