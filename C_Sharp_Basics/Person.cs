@@ -31,6 +31,10 @@ namespace C_Sharp_Basics
     class Person
     {
         private string s1;
+        public static int Sum(int a, int b)
+        {
+            return a + b;
+        }
         public string firstName { 
             get 
             {
@@ -62,5 +66,14 @@ namespace C_Sharp_Basics
     class Driver: Person
     {
         public string carName { get; set; }
+    }
+
+    static class Workers
+    {
+        public static int Sum(int a, int b)
+        {
+            Console.Write($"{a} + {b} = ");
+            return a + b;
+        }
     }
 }

@@ -82,7 +82,7 @@ namespace C_Sharp_Basics
             //Console.WriteLine("\tWhile");
             //whiledo(5);
 
-
+            /*
             Driver driver1 = new Driver();
             driver1.height = 10;
             Console.WriteLine(driver1.height);
@@ -94,6 +94,14 @@ namespace C_Sharp_Basics
             obj.year = 2000;
             Console.WriteLine(obj.year);
             //Console.WriteLine(obj.Price());
+            */
+
+            //Console.WriteLine( Person.Sum(2, 3));       //static method
+            //Console.WriteLine(Workers.Sum(2, 3));
+        
+        
+        
+        
         }
     }
 }
