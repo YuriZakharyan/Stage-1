@@ -99,7 +99,18 @@ namespace C_Sharp_Basics
             //Console.WriteLine( Person.Sum(2, 3));       //static method
             //Console.WriteLine(Workers.Sum(2, 3));
 
-            strings.secondRepeatedElemIndex("acdsj cjjo   aaa", 'c');
+            //strings.secondRepeatedElemIndex("acdsj cjjo   aaa", 'c');
+            string str = "10";
+            int temp = 0;
+            for (int i = 0; i < 2; i++)
+            {
+                if ((str[i] >= 48 && str[i] <= 57) && (str[i + 1] >= 48 && str[i + 1] <= 57))
+                {
+                    temp = Convert.ToInt32(str.Substring(i, 2));
+                    break;
+                }
+            }
+            Console.WriteLine(temp);
         }
     }
 }
