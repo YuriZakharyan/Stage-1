@@ -4,6 +4,23 @@ using System.Text;
 
 namespace C_Sharp_Basics
 {
+    public struct StaticStruct1
+    {
+        public static int u;
+        public void lll(int r) 
+        { 
+        }
+    }
+
+    public class Pahoo
+    {
+        public int Foo(int n)
+        {
+            if (n == 1) return 1;
+            return n + Foo(n - 1);
+        }
+        public int id;
+    }
     struct Car
     {
         public string name;
